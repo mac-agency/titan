@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  
+    Document Title
+    =============================================
+    -->
+    <title>すみれ保育園のためのwebページ | マックエージェンシーのサンプルサイト</title>
+    <!--  
+    Favicons
+    =============================================
+    -->
+    <meta name="msapplication-TileColor" content="#2d88ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+<link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="36x36" href="/android-chrome-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/android-chrome-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/android-chrome-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/android-chrome-96x96.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/android-chrome-128x128.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/android-chrome-144x144.png">
+<link rel="icon" type="image/png" sizes="152x152" href="/android-chrome-152x152.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="256x256" href="/android-chrome-256x256.png">
+<link rel="icon" type="image/png" sizes="384x384" href="/android-chrome-384x384.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="36x36" href="/icon-36x36.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/icon-48x48.png">
+<link rel="icon" type="image/png" sizes="72x72" href="/icon-72x72.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/icon-96x96.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/icon-128x128.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/icon-144x144.png">
+<link rel="icon" type="image/png" sizes="152x152" href="/icon-152x152.png">
+<link rel="icon" type="image/png" sizes="160x160" href="/icon-160x160.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png">
+<link rel="icon" type="image/png" sizes="196x196" href="/icon-196x196.png">
+<link rel="icon" type="image/png" sizes="256x256" href="/icon-256x256.png">
+<link rel="icon" type="image/png" sizes="384x384" href="/icon-384x384.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/icon-512x512.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icon-16x16.png">
+<link rel="icon" type="image/png" sizes="24x24" href="/icon-24x24.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icon-32x32.png">
+<link rel="manifest" href="/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  
+    Stylesheets
+    =============================================
+    
+    -->
+    <!-- Default stylesheets-->
+    <link href="../assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="../assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="../assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="../assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="../assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="../assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="../assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="../assets/css/colors/default.css" rel="stylesheet">
+    <link href="css/index_costomize_base1.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="../index.html">すみれ保育園</a>
+          </div>
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a>
+              </li>
+              <li><a href="#" data-toggle="dropdown">すみれ保育園について</a>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">幼保連携型認定こども園</a>
+                <ul class="dropdown-menu">
+                  <li class="doropdown"><a href="#">幼保連携型とは</a>
+                  </li>
+									<li><a href="#">未満児のお預かり</a>
+                  </li>
+									<li><a href="#">幼保連携</a>
+                  </li>
+									<li><a href="#">就学前対策</a>
+                  </li>
+                  <!--<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Services</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="../service1.html">Service 1</a></li>
+                      <li><a href="../service2.html">Service 2</a></li>
+                      <li><a href="../service3.html">Service 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Pricing</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="../pricing1.html">Pricing 1</a></li>
+                      <li><a href="../pricing2.html">Pricing 2</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gallery</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="../gallery_col_2.html">2 Columns</a></li>
+                      <li><a href="../gallery_col_3.html">3 Columns</a></li>
+                      <li><a href="../gallery_col_4.html">4 Columns</a></li>
+                      <li><a href="../gallery_col_6.html">6 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Contact</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="../contact1.html">Contact 1</a></li>
+                      <li><a href="../contact2.html">Contact 2</a></li>
+                      <li><a href="../contact3.html">Contact 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Restaurant menu</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="../restaurant_menu1.html">Menu 2 Columns</a></li>
+                      <li><a href="../restaurant_menu2.html">Menu 3 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../login_register.html">Login / Register</a></li>
+                  <li><a href="../faq.html">FAQ</a></li>
+                  <li><a href="../404.html">Page 404</a></li>-->
+                </ul>
+              </li>
+              <li><a href="#">よくあるご質問</a>
+              </li>
+							
+              <li><a href="#">採用情報</a>
+              </li>
+              
+              <li><a href="#">お問合せ</a>
+              </li>
+              <!--<li><a href="#">reservation</a>
+              </li>-->
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="home-section home-parallax home-fade home-full-height bg-dark-60 agency-page-header" id="home" data-background="images/top_backgroung1.jpg">
+        <div class="titan-caption">
+          <div class="caption-content">
+            <div class="font-alt mb-30 titan-title-size-1">阿賀野に広がる育ちの輪</div>
+						<div class="font-alt mb-40 titan-title-size-3">みんなが集う <span class="rotate color-pink">幸せ | 笑顔 | 楽しみ | 生きがい</span>
+            </div><a class="section-scroll btn btn-border-w btn-circle" href="#about">詳しく見る</a>
+          </div>
+        </div>
+      </section>
+			
+			
+			
+			
+				<hr>
+      <div class="main">
+				<section class="module top_margin10 top_padding20">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					<img class="img-responsive center-block" src="images/family.svg">
+						<h2 class="text-center">親子三代すみれ保育園</h2>
+					</div>
+				</div>
+			</div>
+				</section>
+        <section class="module top_padding30 bottom_padding30">
+          <div class="container">
+            <div class="row multi-columns-row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="far fa-calendar-alt"></span></div>
+                  <h3 class="features-title font-alt">最新の予定を更新</h3>当園のホームページでは最新のスケジュールを公開しています。ぜひご覧ください。
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="fas fa-coffee"></span></div>
+                  <h3 class="features-title font-alt">お父さんお母さんも</h3>当園は広くオープンなこども園です。親御さんのコミュニケーションの場でもあります。
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="far fa-image"></span></div>
+                  <h3 class="features-title font-alt">日常の楽しい姿を写真で確認</h3>公開している写真のほか、関係者しか閲覧できないところでご覧いただけます。
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="fas fa-birthday-cake"></span></div>
+                  <h3 class="features-title font-alt">お誕生日をみんなで</h3>お子様のお誕生日をクラスのみんなでお祝いしています。
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module pt-0 pb-0" id="about">
+          <div class="row position-relative m-0">
+            <div class="col-xs-12 col-md-6 side-image" data-background="images/hoiku_room1.jpg"></div>
+            <div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h2 class="module-title font-alt align-left">幼保連携型認定こども園　すみれ保育園</h2>
+                  <div class="module-subtitle font-serif align-left">幼稚園と保育園の機能を併せ持った幼保連携型認定こども園です。</div>
+                  <p>義務教育前のお子様を育む施設として、また、広く阿賀野地区の子供環境の充実を図ることも目的に存在する幼保連携型認定こども園と「すみれ保育園」といえるでしょう。</p>
+                  <p>様々なご家庭環境に対応するためのお預かりの曜日や時間がフレキシブルに設定されています。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+				
+				<section>
+					<div class="container top_margin50">
+					  <div class="row">
+					    <div class="col-md-4">
+					      <div class="thumbnail"><img src="images/sumire1.jpg" alt="Thumbnail Image 1">
+					        <div class="caption">
+					          <h3>入園のご案内</h3>
+					          <p>すみれ保育園へご入園いただくためのご案内をしています。</p>
+					          <p><a href="#" class="btn btn-primary" role="button">詳しくはこちらへ</a><!--<a href="#" class="btn btn-default" role="button">Button</a>--></p>
+				          </div>
+				        </div>
+				      </div>
+							<div class="col-md-4">
+					      <div class="thumbnail"><img src="images/sumire2.jpg" alt="Thumbnail Image 1">
+					        <div class="caption">
+					          <h3>子育て支援</h3>
+					          <p>当園の子育て支援（従来の幼稚園機能）について詳しくご案内しております。</p>
+					          <p><a href="#" class="btn btn-primary" role="button">詳しくはこちらへ</a><!--<a href="#" class="btn btn-default" role="button">Button</a>--></p>
+				          </div>
+				        </div>
+				      </div>
+							<div class="col-md-4">
+					      <div class="thumbnail"><img src="images/sumire3.jpg" alt="Thumbnail Image 1">
+					        <div class="caption">
+					          <h3>預かり保育</h3>
+					          <p>当園の預かり保育（従来の保育園機能）について詳しくご案内しております。</p>
+					          <p><a href="#" class="btn btn-primary" role="button">詳しくはこちらへ</a><!--<a href="#" class="btn btn-default" role="button">Button</a>--></p>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+          </div>
+				</section>
+				
+        <!--<section class="module pb-0" id="works">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Hair Style</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <ul class="filter font-alt" id="filters">
+                  <li><a class="current wow fadeInUp" href="#" data-filter="*">All</a></li>
+                  <li><a class="wow fadeInUp" href="#" data-filter=".short" data-wow-delay="0.2s">short</a></li>
+                  <li><a class="wow fadeInUp" href="#" data-filter=".medium" data-wow-delay="0.4s">medium</a></li>
+                  <li><a class="wow fadeInUp" href="#" data-filter=".semi-long" data-wow-delay="0.6s">semi-long</a></li>
+                  <li><a class="wow fadeInUp" href="#" data-filter=".long" data-wow-delay="0.6s">long</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="works-grid works-grid-gut works-grid-3 works-hover-d" id="works-grid">
+              <li class="work-item short"><a href="#">
+                  <div class="work-image"><img src="./images/short1.jpg" alt="short hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ショートヘア</div>
+                  </div></a></li>
+							<li class="work-item medium"><a href="#">
+                  <div class="work-image"><img src="./images/medium1.jpg" alt="medium hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ミディアムヘア</div>
+                  </div></a></li>
+							<li class="work-item semi-long"><a href="#">
+                  <div class="work-image"><img src="./images/semi_long1.jpg" alt="semi-long hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">セミロングヘア</div>
+                  </div></a></li>
+							<li class="work-item long"><a href="#">
+                  <div class="work-image"><img src="./images/long1.jpg" alt="long hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ロングヘア</div>
+                  </div></a></li>
+              <li class="work-item short"><a href="#">
+                  <div class="work-image"><img src="./images/short5.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ショートヘア</div>
+                  </div></a></li>
+							<li class="work-item medium"><a href="#">
+                  <div class="work-image"><img src="./images/medium4.jpg" alt="medium hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ミディアムヘア</div>
+                  </div></a></li>
+							<li class="work-item semi-long"><a href="#">
+                  <div class="work-image"><img src="./images/semi_long2.jpg" alt="semi-long hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">セミロングヘア</div>
+                  </div></a></li>
+							<li class="work-item long"><a href="#">
+                  <div class="work-image"><img src="./images/long2.jpg" alt="long hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ロングヘア</div>
+                  </div></a></li>
+              <li class="work-item short"><a href="#">
+                  <div class="work-image"><img src="./images/short6.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ショートヘア</div>
+                  </div></a></li>
+							<li class="work-item medium"><a href="#">
+                  <div class="work-image"><img src="./images/medium8.jpg" alt="medium hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ミディアムヘア</div>
+                  </div></a></li>
+							<li class="work-item semi-long"><a href="#">
+                  <div class="work-image"><img src="./images/semi_long3.jpg" alt="semi-long hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">セミロングヘア</div>
+                  </div></a></li>
+							<li class="work-item long"><a href="#">
+                  <div class="work-image"><img src="./images/long4.jpg" alt="long hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ロングヘア</div>
+                  </div></a></li>
+              <li class="work-item short"><a href="#">
+                  <div class="work-image"><img src="./images/short7.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ショートヘア</div>
+                  </div></a></li>
+							<li class="work-item medium"><a href="#">
+                  <div class="work-image"><img src="./images/medium9.jpg" alt="medium hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ミディアムヘア</div>
+                  </div></a></li>
+							<li class="work-item semi-long"><a href="#">
+                  <div class="work-image"><img src="./images/semi_long4.jpg" alt="semi-long hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">セミロングヘア</div>
+                  </div></a></li>
+							<li class="work-item long"><a href="#">
+                  <div class="work-image"><img src="./images/long5.jpg" alt="long hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ロングヘア</div>
+                  </div></a></li>
+              <li class="work-item short"><a href="#">
+                  <div class="work-image"><img src="./images/short8.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ショートヘア</div>
+                  </div></a></li>
+							<li class="work-item medium"><a href="#">
+                  <div class="work-image"><img src="./images/medium10.jpg" alt="medium hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ミディアムヘア</div>
+                  </div></a></li>
+							<li class="work-item long"><a href="#">
+                  <div class="work-image"><img src="./images/long6.jpg" alt="long hair"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ロングヘア</div>
+                  </div></a></li>
+              <li class="work-item short"><a href="#">
+                  <div class="work-image"><img src="./images/short9.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ショートヘア</div>
+                  </div></a></li>
+							<li class="work-item short"><a href="#">
+                  <div class="work-image"><img src="./images/short10.jpg" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">Hair style</h3>
+                    <div class="work-descr">ショートヘア</div>
+                  </div></a></li>
+            </ul>
+          </div>
+        </section>-->
+        <section class="module-small bg-sumire">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
+                <div class="callout-text font-alt">
+                  <h3 class="callout-title">活動報告を簡単にまとめています。</h3>
+                  <p>毎日楽しく生き生きとした園児たちに癒やされますね。</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="#">詳しくはこちらから</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module" id="team">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Staff</h2>
+                <div class="module-subtitle font-serif">私達が皆様の大切なお子さんをお預かりしています。</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-sm-20 wow fadeInUp col-md-3 col-sm-6 col-xs-6">
+                <div class="team-item">
+                  <div class="team-image"><img src="./images/staff2.jpg" alt="スタッフ"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt">みなさんこんにちは</h5>
+                      <p class="font-serif">簡単な自己紹介文が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                      <!--<div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>-->
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">安藤　隆</div>
+                    <div class="team-role">園長</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-sm-20 wow fadeInUp col-md-3 col-sm-6 col-xs-6">
+                <div class="team-item">
+                  <div class="team-image"><img src="./images/staff1.jpg" alt="スタッフ"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt">はじめまして。</h5>
+                      <p class="font-serif">簡単な自己紹介文が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                      <!--<div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>-->
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">井上　幸子</div>
+                    <div class="team-role">副園長　保育士</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-sm-20 wow fadeInUp col-md-3 col-sm-6 col-xs-6">
+                <div class="team-item">
+                  <div class="team-image"><img src="./images/staff4.jpg" alt="スタッフ"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt">毎日が楽しいです。</h5>
+                      <p class="font-serif">簡単な自己紹介文が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                      <!--<div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>-->
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">田中　泰典</div>
+                    <div class="team-role">保育士</div>
+                  </div>
+                </div>
+              </div>
+							<div class="mb-sm-20 wow fadeInUp col-md-3 col-sm-6 col-xs-6">
+                <div class="team-item">
+                  <div class="team-image"><img src="./images/staff3.jpg" alt="Member Photo"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt">精一杯頑張っています。</h5>
+                      <p class="font-serif">簡単な自己紹介文が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                      <!--<div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>-->
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">前場　愛美</div>
+                    <div class="team-role">保育士</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="divider-w">
+        <section class="module">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="font-alt mb-30">よくあるご質問</h4>
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title font-alt"><a data-toggle="collapse" data-parent="#accordion" href="#support1">事前に保育園の見学をさせていただくことはできますか？</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse in" id="support1">
+                      <div class="panel-body">はい。もちろんできますし、歓迎しています。事前にお電話をいただき、お越しいただける日時をお知らせください。そのときに色々とお話をご説明もいたしますので、お気軽にお申し込みください。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title font-alt"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support2">子供の送り迎えについてはどのような仕組みになっていますか？</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="support2">
+                      <div class="panel-body">当園では、幼保連携型でそれぞれ送迎のある・なしを選択していただけます。詳しくはこちらのページをご参照ください。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title font-alt"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support3">子供を迎えに行く時間が遅くなりそうな場合はどうすればいいですか？</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="support3">
+                      <div class="panel-body">お迎えが遅くなると判った時点で当園までご連絡ください。また、当園がお預かりできるのは午後11時までとなっておりますので、予めご承知おきください。
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title font-alt"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support4">日曜日に子供を預かってほしいのですが。</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="support4">
+                      <div class="panel-body">基本的に3日前までにお申し出ください。その他ご不明なことは当園までお電話ください。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--<div class="col-sm-6">
+                <h4 class="font-alt mb-30">Popular hair style</h4>
+                <h6 class="font-alt"><span class="icon-tools-2"></span> Development
+                </h6>
+                <div class="progress">
+                  <div class="progress-bar pb-dark" aria-valuenow="60" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+                </div>
+                <h6 class="font-alt"><span class="icon-strategy"></span> Branding
+                </h6>
+                <div class="progress">
+                  <div class="progress-bar pb-dark" aria-valuenow="80" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+                </div>
+                <h6 class="font-alt"><span class="icon-target"></span> Marketing
+                </h6>
+                <div class="progress">
+                  <div class="progress-bar pb-dark" aria-valuenow="50" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+                </div>
+                <h6 class="font-alt"><span class="icon-camera"></span> Photography
+                </h6>
+                <div class="progress">
+                  <div class="progress-bar pb-dark" aria-valuenow="90" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+                </div>
+                <h6 class="font-alt"><span class="icon-pencil"></span> Designing
+                </h6>
+                <div class="progress">
+                  <div class="progress-bar pb-dark" aria-valuenow="70" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+                </div>
+                <h6 class="font-alt"><span class="icon-lifesaver"></span> Dedication
+                </h6>
+                <div class="progress">
+                  <div class="progress-bar pb-dark" aria-valuenow="100" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="font-alt"></span></div>
+                </div>
+              </div>-->
+            </div>
+          </div>
+        </section>
+        <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="images/top_background2.jpg">
+          <div class="testimonials-slider pt-140 pb-140">
+            <ul class="slides">
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon"><span class="far fa-smile"></span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">毎日お世話になっています。<br>
+私も子供もすみれ保育園が好きです。</blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">安藤優子</div>
+                          <div class="testimonial-descr">阿賀野市</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon"><span class="far fa-smile"></span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">いつも細かなところまでお気遣いいただいて本当にありがとうございます。</blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">小林順子</div>
+                          <div class="testimonial-descr">阿賀野市</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon"><span class="far fa-smile"></span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">安心してお預けできるのが何よりもありがたいです。</blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">松本梨香</div>
+                          <div class="testimonial-descr">阿賀野市</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="module" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Contact us</h2>
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <form id="contactForm" role="form" method="post" action="../php/contact.php">
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
+                  </div>
+                </form>
+                <div class="ajax-response font-alt" id="contactFormResponse"></div>
+              </div>
+              <!--<div class="col-sm-4">
+                <div class="alt-features-item mt-0">
+                  <div class="alt-features-icon"><span class="icon-megaphone"></span></div>
+                  <h3 class="alt-features-title font-alt">Where to meet</h3>Titan Company<br/>23 Greate Street<br/>Los Angeles, 12345 LS
+                </div>
+                <div class="alt-features-item mt-xs-60">
+                  <div class="alt-features-icon"><span class="icon-map"></span></div>
+                  <h3 class="alt-features-title font-alt">Say Hello</h3>Email: somecompany@example.com<br/>Phone: +1 234 567 89 10
+                </div>
+              </div>-->
+            </div>
+          </div>
+        </section>
+        <div class="module-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">About sumire hoiikuen</h5>
+                  <p>いつも笑顔で明るい保育。それが私達すみれ保育園です。</p>
+                  <p>Phone: +1 234 567 89 10</p><!--Fax: +1 234 567 89 10-->
+                  <p>Email:<a href="#">info@example.com</a></p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">スタッフ紹介</h5>
+                  <ul class="icon-list">
+                    <li>安藤　隆 <a href="#">園長</a></li>
+                    <li>井上　幸子 <a href="#">副園長　保育士</a></li>
+                    <li>田中　泰典 <a href="#">保育士</a></li>
+                    <li>前場　愛美 <a href="#">保育士</a></li>
+                    <li>藤堂　聡 <a href="#">保育士</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">Blog Categories</h5>
+                  <ul class="icon-list">
+                    <li><a href="#">青組のブログ</a></li>
+                    <li><a href="#">緑組のブログ</a></li>
+                    <li><a href="#">赤組のぐろぐ</a></li>
+                    <li><a href="#">黄色組のブログ</a></li>
+                    <li><a href="#">白組のブログ</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--<div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">hair salon</h5>
+                  <ul class="widget-posts">
+                    <li class="clearfix">
+                      <div class="widget-posts-image"><a href="#"><img src="../assets/images/rp-1.jpg" alt="Post Thumbnail"/></a></div>
+                      <div class="widget-posts-body">
+                        <div class="widget-posts-title"><a href="#">Designer Desk Essentials</a></div>
+                        <div class="widget-posts-meta">23 january</div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="widget-posts-image"><a href="#"><img src="../assets/images/rp-2.jpg" alt="Post Thumbnail"/></a></div>
+                      <div class="widget-posts-body">
+                        <div class="widget-posts-title"><a href="#">Realistic Business Card Mockup</a></div>
+                        <div class="widget-posts-meta">15 February</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>-->
+            </div>
+          </div>
+        </div>
+        <hr class="divider-d">
+        <footer class="footer bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="copyright font-alt text-center">&copy; 2018&nbsp;<a href="../index.html">sumire hoiikuen</a>, All Rights Reserved</p>
+              </div>
+              <!--<div class="col-sm-6">
+                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
+                </div>
+              </div>-->
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+    <!--  
+    JavaScripts
+    =============================================
+    -->
+    <script src="../assets/lib/jquery/dist/jquery.js"></script>
+    <script src="../assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/lib/wow/dist/wow.js"></script>
+    <script src="../assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="../assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="../assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="../assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="../assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../assets/lib/smoothscroll.js"></script>
+    <script src="../assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="../assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

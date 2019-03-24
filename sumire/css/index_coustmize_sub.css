@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.top_cloud {
+  background-image: url(../images/sumire_cloud.svg);
+  background-repeat: repeat-x;
+  height: 180px;
+  clear: both;
+  padding: 0px;
+  background-position: 0px 0px;
+  background-clip: content-box;
+  position: relative;
+  top: -13px;
+}
+
+.top_line {
+  height: 5px;
+  background-color: hsla(204,100%,50%,1.00);
+  clear: none;
+}
+
+.top_logo {
+  margin-top: 0px;
+  padding-top: 60px;
+  width: 35%;
+}
+
+.city {
+  background-image: url(url);
+  position: relative;
+  top: -118px;
+  float: right;
+}
+
+.top_mail {
+  float: right;
+  padding-top: 13px;
+}
+
+.padding_sayuu_zero {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.top_tel {
+  float: right;
+  position: relative;
+  top: -270px;
+}
